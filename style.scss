@@ -1,0 +1,135 @@
+$primaryColor: #111;
+$secondaryColor: #ffd31d;
+
+body{
+  font-family: 'Pangolin', cursive;
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  
+
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  border: 1px dashed $secondaryColor;
+  
+}
+
+header{
+  padding: 20px;
+  h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+  }
+  h2{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    margin-top: 0;
+  }
+}
+
+form{
+  padding: 0px 20px;
+  color: whitesmoke;
+
+  #task{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #333;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-align: center;
+
+  }
+
+  ::placeholder{
+    font-size: 1.3rem;
+  }
+  
+  #submitBtn{
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background-color: $secondaryColor;
+    font-family: 'Playfair Display', serif;
+
+    
+    
+
+    &:hover{
+      opacity: 0.8;
+      transition: .4s all ease-in-out;
+    }
+  }
+}
+
+.card-action{
+  #task-title{
+    font-size: 2rem;
+    padding: 0px 20px;
+    color: whitesmoke;
+  }
+
+  #filter{
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    border-bottom: 1px solid #333;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .collection{
+    width: 90%;
+    margin: 40px auto;
+    color: $secondaryColor;
+
+    li{
+      list-style: none;
+      padding: 5px 0;
+      font-size: 1.7rem;
+
+      i{
+        font-size: 1.7rem;
+        color: whitesmoke;
+        padding: 0 10px;
+        display: inline-block;
+
+        &:hover{
+          color: #fa1616;
+          transition: .4s all ease-in-out;
+        }
+      }
+    }
+  }
+  
+  a.clear-tasks{
+    padding: 10px 30px;
+    color: $primaryColor;
+    text-decoration: none;
+    background-color: whitesmoke;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    margin: 30px 0;
+
+    &:hover{
+      color: $primaryColor;
+      background-color: $secondaryColor;
+      transition: .4s all ease-in-out;
+    }
+    
+  }
+}
+
